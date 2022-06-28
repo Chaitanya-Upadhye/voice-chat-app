@@ -11,7 +11,7 @@ import SessionContext from "./Contexts/SessionContext";
 const { io } = require("socket.io-client");
 
 const peer = new Peer();
-const socket = io("http://localhost:8080");
+const socket = io("http://172.104.207.58:8080");
 const socketEventhandlers = {
   userJoinedRoom: (cb) => socket.on("user-joined-room", cb),
   userLeftRoom: (cb) => socket.on("user-left-room", cb),
